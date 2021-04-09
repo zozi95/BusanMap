@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 
-div :hover {
+svg :hover {
   fill: rgb(21, 154, 243);
   cursor: pointer;
   stroke-width: 0.2rem;
