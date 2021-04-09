@@ -5,8 +5,10 @@
 }
 
 div :hover {
-  fill: rgb(245, 228, 228);
+  fill: rgb(21, 154, 243);
   cursor: pointer;
+  stroke-width: 0.2rem;
+  transition: 0.75s;
 }
 div {
   display: flex;
@@ -47,7 +49,7 @@ i {
   position: absolute;
   top: -20px;
   animation: fall 10s linear forwards;
-  color: rgb(245, 215, 227);
+  color: rgb(240, 167, 218);
 }
 
 @keyframes fall {
