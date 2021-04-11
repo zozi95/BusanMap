@@ -3,7 +3,9 @@
   margin: 0;
   box-sizing: border-box;
 }
-
+body {
+  font-family: "Montserrat", sans-serif;
+}
 svg :hover {
   fill: rgb(21, 154, 243);
   cursor: pointer;
@@ -20,12 +22,12 @@ header {
   color: rgb(20, 64, 146);
   position: sticky;
   top: 0px;
-  z-index: 3;
+  z-index: 10;
 }
 nav {
   min-height: 10vh;
   display: flex;
-  width: 90%;
+  width: 80%;
   margin: auto;
   padding: 2rem;
   align-items: center;
