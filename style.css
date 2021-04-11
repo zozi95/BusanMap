@@ -3,6 +3,10 @@
   margin: 0;
   box-sizing: border-box;
 }
+h3,
+p {
+  font-family: "Gothic A1", sans-serif;
+}
 body {
   font-family: "Montserrat", sans-serif;
 }
