@@ -1,3 +1,9 @@
+const 
+
+
+
+
+
 createFlowers();
 
 setInterval(createFlowers, 200);
@@ -17,3 +23,5 @@ function createFlowers() {
     flowers.remove();
   }, 10000);
 }
+
+
