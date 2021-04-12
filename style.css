@@ -157,3 +157,12 @@ i {
     transform: translateY(98vh) rotate(560deg) translateX(60px);
   }
 }
+
+@keyframes up {
+  from {
+    transform: translateX(0px);
+  }
+  to {
+    transform: translateX(20px);
+  }
+}
