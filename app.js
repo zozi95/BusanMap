@@ -243,3 +243,5 @@ fetch(
   .catch((err) =>
     alert("API is broken😑send me a message here -> zozi95@naver.com  ")
   );
+
+//날씨 드래그 화면 끄기 추가 할 예정
