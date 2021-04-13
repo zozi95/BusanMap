@@ -12,7 +12,7 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 svg :hover {
-  fill: rgb(21, 154, 243);
+  fill: rgb(167, 221, 231);
   cursor: pointer;
   stroke-width: 0.2rem;
   transition: 0.75s;
