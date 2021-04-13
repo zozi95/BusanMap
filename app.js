@@ -217,3 +217,29 @@ function createFlowers() {
     flowers.remove();
   }, 10000);
 }
+
+// Weather
+let name = document.querySelector(".name");
+let desc = document.querySelector(".desc");
+let temp = document.querySelector(".temp");
+let icon = document.querySelector(".icon");
+fetch(
+  "https://api.openweathermap.org/data/2.5/weather?q=Busan&units=metric&appid=8bd51bf8ee0e570568b12dc8499aab3b"
+)
+  .then((response) => response.json())
+  .then((data) => {
+    console.log(data);
+    let nameValue = data["name"];
+    let tempValue = data["main"]["temp"];
+    let descValue = data["weather"][0]["description"];
+    let iconValue = data["weather"][0]["icon"];
+
+    name.innerHTML = nameValue;
+    temp.innerHTML = tempValue + "˚C";
+    desc.innerHTML = descValue;
+    icon.src = "http://openweathermap.org/img/wn/" + iconValue + "@2x.png";
+  })
+
+  .catch((err) =>
+    alert("API is broken😑send me a message here -> zozi95@naver.com  ")
+  );

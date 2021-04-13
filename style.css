@@ -23,7 +23,7 @@ div {
   justify-content: center;
 }
 header {
-  background: #f8f9fb;
+  background: #ffffff;
   color: rgb(20, 64, 146);
   position: sticky;
   top: 0px;
@@ -140,6 +140,22 @@ nav ul {
   background-color: rgb(103, 164, 243);
   color: white;
   cursor: pointer;
+}
+
+.weather {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  background: rgb(167, 221, 231);
+  color: white;
+  border-radius: 20px;
+  padding: 2rem;
+}
+
+.weather .desc {
+  font-size: 20px;
+  color: rgb(114, 81, 98);
 }
 
 i {
