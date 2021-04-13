@@ -1,0 +1,13 @@
+8bd51bf8ee0e570568b12dc8499aab3b
+
+{"coord":{"lon":129.0403,"lat":35.1028},
+"weather":[{"id":803,"main":"Clouds",
+"description":"broken clouds","icon":"04d"}],
+"base":"stations","main":
+{"temp":294.15,"feels_like":293.58,"temp_min":294.15,
+"temp_max":294.15,"pressure":1010,"humidity":49},
+"visibility":10000,"wind":{"speed":6.17,"deg":320},
+"clouds":{"all":75},"dt":1618289589,
+"sys":{"type":1,"id":8086,"country":"KR","sunrise":1618260871,
+"sunset":1618307633},"timezone":32400,"id":1838524,
+"name":"Busan","cod":200}
