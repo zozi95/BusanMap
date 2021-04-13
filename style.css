@@ -12,6 +12,7 @@ body {
   background-color: rgb(255, 255, 255);
   font-family: "Montserrat", sans-serif;
 }
+
 svg :hover {
   fill: rgb(167, 221, 231);
   cursor: pointer;
@@ -30,7 +31,7 @@ header {
   position: sticky;
   top: 0px;
   z-index: 10;
-  box-shadow: 3px 3px 3px 3px rgb(228, 242, 248);
+  box-shadow: 4px 4px 3px 3px rgb(202, 208, 211);
 }
 nav {
   min-height: 10vh;
