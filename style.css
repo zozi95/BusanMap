@@ -9,7 +9,7 @@ p {
   font-family: "Gothic A1", sans-serif;
 }
 body {
-  background-color: rgb(239, 253, 255);
+  background-color: rgb(255, 255, 255);
   font-family: "Montserrat", sans-serif;
 }
 svg :hover {
@@ -30,6 +30,7 @@ header {
   position: sticky;
   top: 0px;
   z-index: 10;
+  box-shadow: 3px 3px 3px 3px rgb(228, 242, 248);
 }
 nav {
   min-height: 10vh;
