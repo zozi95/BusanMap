@@ -228,7 +228,6 @@ fetch(
 )
   .then((response) => response.json())
   .then((data) => {
-    console.log(data);
     let nameValue = data["name"];
     let tempValue = data["main"]["temp"];
     let descValue = data["weather"][0]["description"];
@@ -246,23 +245,23 @@ fetch(
 
 //날씨 드래그 추가
 
-const weather = document.querySelector(".weather");
+const drag = document.querySelector(".weather");
 
-weather.onmousedown = (e) => {
-  let shiftX = e.clientX - weather.getBoundingClientRect().left;
-  let shiftY = e.clientY - weather.getBoundingClientRect().top;
+drag.onmousedown = (e) => {
+  let shiftX = e.clientX - drag.getBoundingClientRect().left;
+  let shiftY = e.clientY - drag.getBoundingClientRect().top;
 
-  weather.style.position = "absolute";
-  weather.style.zIndex = 1000;
-  document.body.append(weather);
+  drag.style.position = "absolute";
+  drag.style.zIndex = 1000;
+  document.body.append(drag);
 
   moveAt(e.pageX, e.pageY);
 
   // 초기 이동을 고려한 좌표 (pageX, pageY)에서
   // weather를 이동합니다.
   function moveAt(pageX, pageY) {
-    weather.style.left = pageX - shiftX + "px";
-    weather.style.top = pageY - shiftY + "px";
+    drag.style.left = pageX - shiftX + "px";
+    drag.style.top = pageY - shiftY + "px";
   }
 
   function onMouseMove(e) {
@@ -273,12 +272,14 @@ weather.onmousedown = (e) => {
   document.addEventListener("mousemove", onMouseMove);
 
   // 드롭하고, 불필요한 핸들러를 제거합니다.
-  weather.onmouseup = () => {
+  drag.onmouseup = () => {
     document.removeEventListener("mousemove", onMouseMove);
-    weather.onmouseup = null;
+    drag.onmouseup = null;
   };
 };
 
-weather.ondragstart = () => {
+drag.ondragstart = () => {
   return false;
 };
+
+//날씨 remove
