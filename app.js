@@ -198,9 +198,9 @@ Ganseoclose.addEventListener("click", () => {
 });
 
 // 벚꽃
-createFlowers();
+// createFlowers();
 
-setInterval(createFlowers, 200);
+// setInterval(createFlowers, 200);
 
 function createFlowers() {
   const flowers = document.createElement("i");
@@ -245,7 +245,7 @@ fetch(
 
 //날씨 드래그 추가
 
-const drag = document.querySelector(".weather");
+const drag = document.querySelector(".drag");
 
 drag.onmousedown = (e) => {
   let shiftX = e.clientX - drag.getBoundingClientRect().left;
@@ -283,3 +283,8 @@ drag.ondragstart = () => {
 };
 
 //날씨 remove
+
+function menuToggle() {
+  const weather = document.querySelector(".weather");
+  weather.classList.toggle("active");
+}

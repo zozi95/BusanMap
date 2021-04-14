@@ -157,14 +157,29 @@ nav ul {
   align-items: center;
   background: rgb(167, 221, 231);
   color: white;
-  border-radius: 20px;
+  border-radius: 0px 0px 20px 20px;
   padding: 1rem;
   cursor: pointer;
+  visibility: hidden;
+}
+
+.weather.active {
+  visibility: visible;
 }
 
 .weather .desc {
   font-size: 20px;
   color: rgb(114, 81, 98);
+}
+
+.dragMove {
+  background-color: rgb(125, 206, 226);
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  border-radius: 20px 20px 0px 0px;
+  padding: 1rem;
+  cursor: pointer;
 }
 
 i {
