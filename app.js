@@ -244,4 +244,41 @@ fetch(
     alert("API is broken😑send me a message here -> zozi95@naver.com  ")
   );
 
-//날씨 드래그 화면 끄기 추가 할 예정
+//날씨 드래그 추가
+
+const weather = document.querySelector(".weather");
+
+weather.onmousedown = (e) => {
+  let shiftX = e.clientX - weather.getBoundingClientRect().left;
+  let shiftY = e.clientY - weather.getBoundingClientRect().top;
+
+  weather.style.position = "absolute";
+  weather.style.zIndex = 1000;
+  document.body.append(weather);
+
+  moveAt(e.pageX, e.pageY);
+
+  // 초기 이동을 고려한 좌표 (pageX, pageY)에서
+  // weather를 이동합니다.
+  function moveAt(pageX, pageY) {
+    weather.style.left = pageX - shiftX + "px";
+    weather.style.top = pageY - shiftY + "px";
+  }
+
+  function onMouseMove(e) {
+    moveAt(e.pageX, e.pageY);
+  }
+
+  // mousemove로 움직입니다.
+  document.addEventListener("mousemove", onMouseMove);
+
+  // 드롭하고, 불필요한 핸들러를 제거합니다.
+  weather.onmouseup = () => {
+    document.removeEventListener("mousemove", onMouseMove);
+    weather.onmouseup = null;
+  };
+};
+
+weather.ondragstart = () => {
+  return false;
+};

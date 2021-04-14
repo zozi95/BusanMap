@@ -155,6 +155,7 @@ nav ul {
   color: white;
   border-radius: 20px;
   padding: 2rem;
+  cursor: pointer;
 }
 
 .weather .desc {
