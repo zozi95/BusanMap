@@ -282,7 +282,7 @@ drag.ondragstart = () => {
   return false;
 };
 
-//날씨 remove
+//날씨 toggle
 
 function menuToggle() {
   const weather = document.querySelector(".weather");
