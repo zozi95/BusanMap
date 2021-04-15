@@ -198,9 +198,9 @@ Ganseoclose.addEventListener("click", () => {
 });
 
 // 벚꽃
-createFlowers();
+// createFlowers();
 
-setInterval(createFlowers, 200);
+// setInterval(createFlowers, 200);
 
 function createFlowers() {
   const flowers = document.createElement("i");
@@ -286,5 +286,9 @@ drag.ondragstart = () => {
 
 function menuToggle() {
   const weather = document.querySelector(".weather");
+  const dragMove = document.querySelector(".dragMove");
+  const burger = document.querySelector(".burger");
   weather.classList.toggle("active");
+  dragMove.classList.toggle("active");
+  burger.classList.toggle("active");
 }
