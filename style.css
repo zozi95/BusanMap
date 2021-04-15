@@ -182,6 +182,26 @@ nav ul {
   cursor: pointer;
 }
 
+footer {
+  background-color: rgb(133, 127, 127);
+}
+.footer-wrapper {
+  display: flex;
+  padding: 2rem;
+  width: 90%;
+  margin: auto;
+  align-items: center;
+  min-height: 10vh;
+  flex-wrap: wrap;
+  position: absolute;
+}
+footer ul {
+  display: flex;
+  list-style: none;
+  flex: 1 1 40rem;
+  justify-content: space-around;
+  align-items: center;
+}
 i {
   position: absolute;
   top: -20px;
