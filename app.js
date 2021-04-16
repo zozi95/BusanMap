@@ -223,6 +223,8 @@ let name = document.querySelector(".name");
 let desc = document.querySelector(".desc");
 let temp = document.querySelector(".temp");
 let icon = document.querySelector(".icon");
+let todayDate = document.querySelector(".todayDate");
+let currentTime = document.querySelector(".currentTime");
 fetch(
   "https://api.openweathermap.org/data/2.5/weather?q=Busan&units=metric&appid=8bd51bf8ee0e570568b12dc8499aab3b"
 )
@@ -233,15 +235,22 @@ fetch(
     let descValue = data["weather"][0]["description"];
     let iconValue = data["weather"][0]["icon"];
 
+    //날짜
+
     name.innerHTML = nameValue;
-    temp.innerHTML = tempValue + "˚C";
+    temp.innerHTML = tempValue + "˚C" + "<br>";
     desc.innerHTML = descValue;
     icon.src = "http://openweathermap.org/img/wn/" + iconValue + "@2x.png";
-  })
 
-  .catch((err) =>
-    alert("API is broken😑send me a message here -> zozi95@naver.com  ")
-  );
+    function time() {
+      let today = new Date();
+      currentTime.innerHTML = today.toLocaleTimeString() + "<br>";
+      todayDate.innerHTML = today.toLocaleDateString("en-US") + "<br>";
+      setInterval(time, 1000);
+    }
+    time();
+  })
+  .catch((err) => alert("😑send me a message here -> zozi95@naver.com  "));
 
 //날씨 드래그 추가
 
