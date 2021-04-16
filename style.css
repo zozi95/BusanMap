@@ -2,7 +2,6 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  overflow: hidden;
 }
 h3,
 p {
@@ -38,7 +37,6 @@ nav {
   display: flex;
   width: 80%;
   margin: auto;
-  padding: 2rem;
   align-items: center;
   flex-wrap: wrap;
 }
@@ -54,8 +52,16 @@ nav ul {
 
 #logo {
   flex: 2 1 40rem;
-  font-family: "Pattaya", sans-serif;
-  font-weight: 400;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.5s;
+}
+#logo:hover {
+  color: rgb(243, 255, 255);
+  text-shadow: 0 0 10px rgb(164, 191, 241), 0 0 20px rgb(164, 191, 241),
+    0 0 40px rgb(164, 191, 241), 0 0 80px rgb(164, 191, 241),
+    0 0 120px rgb(164, 191, 241), 0 0 160px rgb(164, 191, 241);
 }
 
 .busanGijang,
@@ -145,11 +151,7 @@ nav ul {
   color: white;
   cursor: pointer;
 }
-.map .weather {
-  top: -200px;
-  left: -140px;
-  position: relative;
-}
+
 .weather {
   display: flex;
   flex-direction: column;
@@ -198,9 +200,9 @@ nav ul {
 .dragMove.active {
   cursor: pointer;
   border-radius: 20px 20px 0px 0px;
-  transition: 0.1s ease;
+  transition: 0.15s ease;
   opacity: 1;
-  width: 150px;
+  width: 180px;
   font-size: 0px;
   border: solid 4px rgb(200, 225, 245);
 }
@@ -218,15 +220,15 @@ nav ul {
 .burger::before {
   content: "";
   position: absolute;
-  width: 20px;
+  width: 25px;
   height: 4px;
   background: rgb(35, 114, 167);
-  transition: 0.2s;
+  transition: 0.1s;
   transform: translateY(-5px) rotate(90deg);
 }
 .burger.active {
   top: -2px;
-  right: -28px;
+  right: -40px;
 }
 .burger.active::before {
   transform: translateY(0px) rotate(45deg);
@@ -236,10 +238,10 @@ nav ul {
 .burger::after {
   content: "";
   position: absolute;
-  width: 20px;
+  width: 25px;
   height: 4px;
   background: rgb(35, 114, 167);
-  transition: 0.2s;
+  transition: 0.1s;
   transform: translateY(-5px);
 }
 .burger.active::after {

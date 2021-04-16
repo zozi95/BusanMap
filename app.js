@@ -292,3 +292,7 @@ function menuToggle() {
   dragMove.classList.toggle("active");
   burger.classList.toggle("active");
 }
+const weatherToggle = document.getElementById("weatherToggle");
+document.addEventListener("DOMContentLoaded", () => {
+  weatherToggle.addEventListener("click", menuToggle);
+});
