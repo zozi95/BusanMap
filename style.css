@@ -189,13 +189,13 @@ nav ul {
   font-family: "Montserrat", sans-serif;
   font-size: 15px;
   font-weight: bold;
-  border-radius: 50px;
+  border-radius: 20px;
   padding: 2rem;
   width: 150px;
   height: 50px;
   cursor: pointer;
   user-select: none;
-  border: solid 4px rgb(113, 125, 233);
+  border: solid 4px rgb(171, 172, 182);
 }
 
 .dragMove.active {
@@ -223,7 +223,7 @@ nav ul {
   position: absolute;
   width: 25px;
   height: 4px;
-  background: rgb(35, 114, 167);
+  background: rgb(145, 153, 158);
   transition: 0.1s;
   transform: translateY(-5px) rotate(90deg);
 }
@@ -241,7 +241,7 @@ nav ul {
   position: absolute;
   width: 25px;
   height: 4px;
-  background: rgb(35, 114, 167);
+  background: rgb(145, 153, 158);
   transition: 0.1s;
   transform: translateY(-5px);
 }
