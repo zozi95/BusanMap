@@ -10,6 +10,7 @@ p {
 body {
   background-color: rgb(255, 255, 255);
   font-family: "Montserrat", sans-serif;
+  overflow-x: hidden;
 }
 
 svg :hover {
@@ -35,19 +36,10 @@ header {
 nav {
   min-height: 10vh;
   display: flex;
-  width: 80%;
+  width: 60%;
   margin: auto;
   align-items: center;
   flex-wrap: wrap;
-}
-nav ul {
-  display: flex;
-  flex: 1 1 40rem;
-  justify-content: space-around;
-  align-items: center;
-  list-style: none;
-  color: rgb(20, 64, 146);
-  font-weight: bold;
 }
 
 #logo {
@@ -220,7 +212,7 @@ nav ul {
   content: "";
   position: absolute;
   width: 30px;
-  height: 5px;
+  height: 3.5px;
   background: rgb(20, 64, 146);
   transition: 0.1s;
   transform: translateY(-10px);
@@ -239,7 +231,7 @@ nav ul {
   content: "";
   position: absolute;
   width: 30px;
-  height: 5px;
+  height: 3.5px;
   background: rgb(20, 64, 146);
   transition: 0.1s;
   transform: translateY(10px);

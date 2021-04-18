@@ -200,7 +200,7 @@ Ganseoclose.addEventListener("click", () => {
 // 벚꽃
 createFlowers();
 
-setInterval(createFlowers, 200);
+setInterval(createFlowers, 300);
 
 function createFlowers() {
   const flowers = document.createElement("i");
