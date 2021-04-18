@@ -254,42 +254,42 @@ fetch(
 
 //날씨 드래그 추가
 
-const drag = document.querySelector(".drag");
+// const drag = document.querySelector(".drag");
 
-drag.onmousedown = (e) => {
-  let shiftX = e.clientX - drag.getBoundingClientRect().left;
-  let shiftY = e.clientY - drag.getBoundingClientRect().top;
+// drag.onmousedown = (e) => {
+//   let shiftX = e.clientX - drag.getBoundingClientRect().left;
+//   let shiftY = e.clientY - drag.getBoundingClientRect().top;
 
-  drag.style.position = "absolute";
-  drag.style.zIndex = 1000;
-  document.body.append(drag);
+//   drag.style.position = "absolute";
+//   drag.style.zIndex = 1000;
+//   document.body.append(drag);
 
-  moveAt(e.pageX, e.pageY);
+//   moveAt(e.pageX, e.pageY);
 
-  // 초기 이동을 고려한 좌표 (pageX, pageY)에서
-  // weather를 이동합니다.
-  function moveAt(pageX, pageY) {
-    drag.style.left = pageX - shiftX + "px";
-    drag.style.top = pageY - shiftY + "px";
-  }
+//   // 초기 이동을 고려한 좌표 (pageX, pageY)에서
+//   // weather를 이동합니다.
+//   function moveAt(pageX, pageY) {
+//     drag.style.left = pageX - shiftX + "px";
+//     drag.style.top = pageY - shiftY + "px";
+//   }
 
-  function onMouseMove(e) {
-    moveAt(e.pageX, e.pageY);
-  }
+//   function onMouseMove(e) {
+//     moveAt(e.pageX, e.pageY);
+//   }
 
-  // mousemove로 움직입니다.
-  document.addEventListener("mousemove", onMouseMove);
+//   // mousemove로 움직입니다.
+//   document.addEventListener("mousemove", onMouseMove);
 
-  // 드롭하고, 불필요한 핸들러를 제거합니다.
-  drag.onmouseup = () => {
-    document.removeEventListener("mousemove", onMouseMove);
-    drag.onmouseup = null;
-  };
-};
+//   // 드롭하고, 불필요한 핸들러를 제거합니다.
+//   drag.onmouseup = () => {
+//     document.removeEventListener("mousemove", onMouseMove);
+//     drag.onmouseup = null;
+//   };
+// };
 
-drag.ondragstart = () => {
-  return false;
-};
+// drag.ondragstart = () => {
+//   return false;
+// };
 
 //날씨 toggle
 
