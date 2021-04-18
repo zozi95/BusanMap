@@ -198,9 +198,9 @@ Ganseoclose.addEventListener("click", () => {
 });
 
 // 벚꽃
-// createFlowers();
+createFlowers();
 
-// setInterval(createFlowers, 200);
+setInterval(createFlowers, 200);
 
 function createFlowers() {
   const flowers = document.createElement("i");
