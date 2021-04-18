@@ -191,12 +191,11 @@ nav ul {
   font-size: 15px;
   font-weight: bold;
   border-radius: 10px 10px 0px 0px;
-  padding: 2rem;
+  padding: 20px;
   width: 200px;
-  height: 10px;
+  height: 3px;
   cursor: pointer;
   user-select: none;
-  border: solid 4px rgb(20, 64, 146);
 }
 .dragMove.active {
   cursor: pointer;
@@ -215,22 +214,21 @@ nav ul {
   justify-content: center;
   align-items: center;
   padding: 1rem;
-  top: 5px;
-  right: 5px;
 }
 
 .burger::before {
   content: "";
   position: absolute;
-  width: 25px;
-  height: 4px;
+  width: 30px;
+  height: 5px;
   background: rgb(20, 64, 146);
   transition: 0.1s;
-  transform: translateY(-5px) rotate(90deg);
+  transform: translateY(-10px);
+  box-shadow: 0 10px 0;
 }
 .burger.active {
   top: -2px;
-  right: -65px;
+  right: -74px;
 }
 .burger.active::before {
   transform: translateY(0px) rotate(45deg);
@@ -240,11 +238,11 @@ nav ul {
 .burger::after {
   content: "";
   position: absolute;
-  width: 25px;
-  height: 4px;
+  width: 30px;
+  height: 5px;
   background: rgb(20, 64, 146);
   transition: 0.1s;
-  transform: translateY(-5px);
+  transform: translateY(10px);
 }
 .burger.active::after {
   transform: translateY(0px) rotate(-45deg);
